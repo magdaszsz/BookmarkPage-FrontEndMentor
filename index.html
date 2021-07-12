@@ -15,14 +15,15 @@
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
   <body>
-    Features Pricing Contact Login A Simple Bookmark Manager A clean and simple
-    interface to organize your favourite websites. Open a new browser tab and
-    see your sites load instantly. Try it for free. Get it on Chrome Get it on
-    Firefox Features  Download the extension
-    We’ve got more browsers in the pipeline. Please do let us know if you’ve got
-    a favourite you’d like us to prioritize. Frequently Asked Questions Here are
-    some of our FAQs. If you have any other questions you’d like answered please
-    feel free to email us.
+    <nav>
+
+    </nav>
+    
+   .Features Pricing Contact Login A Simple Bookmark Manager Get it on Chrome Get it on
+    Firefox Features Download the extension We’ve got more browsers in the
+    pipeline. Please do let us know if you’ve got a favourite you’d like us to
+    prioritize. Frequently Asked Questions Here are some of our FAQs. If you
+    have any other questions you’d like answered please feel free to email us.
 
     <!-- Question 1 -->
     What is Bookmark?
@@ -59,6 +60,26 @@
     velit. More Info 35,000+ already joined Stay up-to-date with what we’re
     doing Contact Us
     <main>
+      <section class="hero">
+
+        <div class="hero-image">
+          <img src="images/illustration-hero.svg" alt="illustration of web page">
+        </div>
+        <div class="hero-body">
+          <h1 class="hero-header">
+            A simple bookmark manager</h1>
+          <p class="hero-text">
+             A clean and simple
+    interface to organize your favourite websites. Open a new browser tab and
+    see your sites load instantly. Try it for free.
+          </p>
+          <div class="hero-btns">
+            <button class="btn btn-blue">Get it on Chrome</button>
+            <button class="btn btn-white">Get it on Windows</button>
+          </div>
+
+        </div>
+      </section>
       <section class="features">
         <h2 class="features-header">Features</h2>
         <p class="features-text">
@@ -67,51 +88,49 @@
           them on the go.
         </p>
         <ul class="tabs-list">
-          <li>Simple Bookmarking</li>
-          <li>Speedy Searching</li>
-          <li class="active">Easy Sharing</li>
+          <li class="tab-controller">Simple Bookmarking</li>
+          <li class="tab-controller active">Speedy Searching</li>
+          <li class="tab-controller">Easy Sharing</li>
         </ul>
         <div class="tabs-container">
           <div class="tab">
-            <div class="tab-image"></div>
+            <div class="tab-image">
+              <img src="images/illustration-features-tab-1.svg" alt="" />
+            </div>
             <div class="tab-body">
-              <h3 class="tab-header">
-                Bookmark in one click
-              </h3>
+              <h3 class="tab-header">Bookmark in one click</h3>
               <p class="tab-text">
-                 Organize your bookmarks however you
-    like. Our simple drag-and-drop interface gives you complete control over how
-    you manage your favourite sites. 
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
               </p>
-              <a href="#" class="tab-btn">More Info</a>
+              <a href="#" class="tab-btn btn btn-blue">More Info</a>
             </div>
           </div>
           <div class="tab">
-            <div class="tab-image"></div>
-            <div class="tab-body"> 
-              <h3 class="tab-header">
-                Intelligent search
-              </h3>
+            <div class="tab-image">
+              <img src="images/illustration-features-tab-2.svg" alt="" />
+            </div>
+            <div class="tab-body">
+              <h3 class="tab-header">Intelligent search</h3>
               <p class="tab-text">
-                Our powerful
-    search feature will help you find saved sites in no time at all. No need to
-    trawl through all of your bookmarks.
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
               </p>
-              <a href="#" class="tab-btn">More Info</a>
+              <a href="#" class="btn tab-btn btn-blue">More Info</a>
             </div>
           </div>
           <div class="tab">
-            <div class="tab-image"></div>
+            <div class="tab-image">
+              <img src="images/illustration-features-tab-3.svg" alt="" />
+            </div>
             <div class="tab-body">
-              <h3 class="tab-header">
-                Share your bookmarks
-              </h3>
+              <h3 class="tab-header">Share your bookmarks</h3>
               <p class="tab-text">
-                Easily
-    share your bookmarks and collections with others. Create a shareable link
-    that you can send at the click of a button.
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
               </p>
-              <a href="#" class="tab-btn">More Info</a>
+              <a href="#" class="tab-btn btn btn-blue">More Info</a>
             </div>
           </div>
         </div>
@@ -131,7 +150,7 @@
               <h3 class="card-header">Add to Chrome</h3>
               <p>Minium version 62</p>
             </div>
-            <button class="card-btn">Add & Install Extension</button>
+            <button class="btn card-btn btn-blue">Add & Install Extension</button>
           </div>
           <div class="card">
             <div class="card-image">
@@ -141,7 +160,7 @@
               <h3 class="card-header">Add to Firefox</h3>
               <p>Minimum version 55</p>
             </div>
-            <button class="card-btn">Add & Install Extension</button>
+            <button class="btn card-btn btn-blue">Add & Install Extension</button>
           </div>
           <div class="card">
             <div class="card-image">
@@ -151,9 +170,35 @@
               <h3 class="card-header">Add to Opera</h3>
               <p>Minimum version 46</p>
             </div>
-            <button class="card-btn">Add & Install Extension</button>
+            <button class="btn card-btn btn-blue">Add & Install Extension</button>
           </div>
         </div>
+      </section>
+      <section class="cta">
+        <p class="cta-text">35,000+ already joined</p>
+        <h3 class="cta-header">Stay up-to-date with what we’re doing</h3>
+        <form action="post" class="cta-form">
+          <!-- <div class="submit-message">Your email has been successfully submitted</div>
+          <div class="input-container">
+            
+            <input type="text" class="email" placeholder="Enter your email address">
+              <small>Please enter valid email address</small>
+            <button class="btn form-btn" type="submit">Contact Us</button>
+          </div> -->
+          <form>
+         
+              <label for="email" class="visually-hidden"
+                >Write your email to subscribe</label>
+              <input
+                type="email"
+                id="email"
+                class="email"
+                placeholder="Enter your email address"/>
+              <small>Please enter valid email address</small>
+              <button class="btn form-btn" type="submit">Contact Us</button>
+           
+          </form>
+        </form>
       </section>
     </main>
 
@@ -175,7 +220,8 @@
                     fill="#FFF"
                   />
                 </g>
-              </g></svg></a>
+              </g></svg
+          ></a>
         </li>
         <li><a href="#">features</a></li>
         <li><a href="#">pricing</a></li>
@@ -188,7 +234,9 @@
               <path
                 fill="#FFF"
                 fill-rule="evenodd"
-                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg></a>
+                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+              /></svg
+          ></a>
         </li>
         <li>
           <a href="#">
@@ -196,7 +244,9 @@
               <path
                 fill="#FFF"
                 fill-rule="evenodd"
-                d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg></a>
+                d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
+              /></svg
+          ></a>
         </li>
       </ul>
     </footer>
