@@ -138,6 +138,7 @@ img {
   .hero-image img {
     height: 10rem;
   }
+}
 
 @media (min-width: 1000px) {
   .hero {
