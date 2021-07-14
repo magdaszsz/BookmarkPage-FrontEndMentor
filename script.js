@@ -1,5 +1,8 @@
 const controllers = document.querySelectorAll('.tab-controller');
 const tabs = document.querySelectorAll('.tab');
+const openNav = document.querySelector('.toggler');
+const nav = document.querySelector('nav')
+//const closeNav = document.querySelector('.close');
 tabs[1].classList.add('active');
 
 
@@ -46,6 +49,27 @@ form.addEventListener('submit', (e) => {
 email.addEventListener('focus', () => {
   form.classList.remove('error')
 })
+
+// SHOW NAVIGATION ON MOBILE
+
+openNav.addEventListener('click', () => {
+  nav.classList.toggle('active')
+})
+
+// closeNav.addEventListener('click', () => {
+  
+// })
+
+
+const qBtns = document.querySelectorAll('.q-btn');
+
+qBtns.forEach(qBtn => {
+  qBtn.addEventListener('click', () => {
+  qBtn.parentElement.classList.toggle('show')
+})
+})
+
+
 
 
 
