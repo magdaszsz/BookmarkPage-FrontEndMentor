@@ -1,6 +1,6 @@
 # Frontend Mentor - Bookmark landing page
 
-Mobile first, no frameworks just CSS and vanilla JS. Fully responsive with an interactive tabs, FAQ accordion and mobile navigation.
+<h3>Mobile first, no frameworks just CSS and vanilla JS. Fully responsive with interactive tabs, FAQ accordion and mobile navigation.</h3>
 
 https://bookmark-page-front-end-mentor-fffrrg4vp-magdaszsz.vercel.app/
 
