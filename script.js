@@ -2,7 +2,6 @@ const controllers = document.querySelectorAll('.tab-controller');
 const tabs = document.querySelectorAll('.tab');
 const openNav = document.querySelector('.toggler');
 const nav = document.querySelector('nav')
-//const closeNav = document.querySelector('.close');
 tabs[1].classList.add('active');
 
 
@@ -30,19 +29,14 @@ function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
-// function showSubmitMessage() {
-//  document.querySelector('.input-container').style.display = "none"
-//   document.querySelector('.submit-message').style.display = "block";
-// }
+
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   if(!email.value.trim() || !isEmail(email.value.trim())) {
     form.classList.add('error')
   } else {
-    // setTimeout(showSubmitMessage, 600)
     form.reset();
-    //form.reset();
   }
 })
 
@@ -56,9 +50,6 @@ openNav.addEventListener('click', () => {
   nav.classList.toggle('active')
 })
 
-// closeNav.addEventListener('click', () => {
-  
-// })
 
 
 const qBtns = document.querySelectorAll('.q-btn');
@@ -68,6 +59,15 @@ qBtns.forEach(qBtn => {
   qBtn.parentElement.classList.toggle('show')
 })
 })
+
+
+progressBar = document.querySelector("#progress-bar");
+document.addEventListener("scroll", () => {
+  maxScrollPos = document.body.clientHeight - window.innerHeight;
+  scrollPos = window.scrollY;
+  percentage = (scrollPos / maxScrollPos) * 100;
+  progressBar.style.width = `${percentage}%`;
+});
 
 
 

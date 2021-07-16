@@ -11,6 +11,7 @@
 
 :root {
 --soft-blue: hsl(231, 69%, 60%);
+--softer-blue: hsla(231, 59%, 66%, 0.747);
 --soft-red: hsl(0, 94%, 66%);
 --grayish-blue: hsl(229, 8%, 60%);
 --light-grayish-blue: hsl(229, 8%, 90%);
@@ -126,6 +127,13 @@ img {
   position: absolute;
   width: 1px;
 }
+
+#progress-bar {
+  position: fixed;
+  height: 0.3rem;
+  background-color: var(--softer-blue);
+  z-index: 100;
+} 
 
 /* *****************NAVIGATION */
 
