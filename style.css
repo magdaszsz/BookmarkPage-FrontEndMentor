@@ -140,7 +140,15 @@ img {
 nav {
   padding: 0 7vw;
   height: 5.5rem;
-  
+  background-color: #fff;
+  z-index: 100;
+}
+
+nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .close {
@@ -196,7 +204,6 @@ nav.active .nav-list {
   width: 100%;
   text-align: center;
   color: white;
-  //transform: scaleX(0);
   -webkit-animation: fade 1s ease-out;
           animation: fade 1s ease-out;
 }

@@ -1,7 +1,9 @@
 const controllers = document.querySelectorAll('.tab-controller');
 const tabs = document.querySelectorAll('.tab');
 const openNav = document.querySelector('.toggler');
-const nav = document.querySelector('nav')
+const nav = document.querySelector('nav');
+const hero = document.querySelector(".hero");
+
 tabs[1].classList.add('active');
 
 
@@ -61,13 +63,33 @@ qBtns.forEach(qBtn => {
 })
 
 
-progressBar = document.querySelector("#progress-bar");
-document.addEventListener("scroll", () => {
-  maxScrollPos = document.body.clientHeight - window.innerHeight;
-  scrollPos = window.scrollY;
-  percentage = (scrollPos / maxScrollPos) * 100;
-  progressBar.style.width = `${percentage}%`;
-});
+// progressBar = document.querySelector("#progress-bar");
+// document.addEventListener("scroll", () => {
+//   maxScrollPos = document.body.clientHeight - window.innerHeight;
+//   scrollPos = window.scrollY;
+//   percentage = (scrollPos / maxScrollPos) * 100;
+//   progressBar.style.width = `${percentage}%`;
+// });
+
+
+
+const options = {
+  root: null,
+  threshold: [0, .2]
+}
+
+const showNav = (entries) => {
+  const [entry] = entries;
+  if(!entry.isIntersecting) {
+    nav.classList.add('fixed')
+  } else {
+    nav.classList.remove('fixed')
+  }
+}
+
+const heroObserver = new IntersectionObserver(showNav, options)
+
+heroObserver.observe(hero)
 
 
 
