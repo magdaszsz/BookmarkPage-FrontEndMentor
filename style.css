@@ -549,8 +549,9 @@ nav.active .nav-list {
 }
 
 .tab-image img {
-  height: 100%;
+  height: auto;
   margin: auto;
+  width: 80%;
 }
 
 .tab-body {
