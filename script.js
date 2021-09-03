@@ -62,16 +62,7 @@ qBtns.forEach(qBtn => {
 })
 })
 
-
-// progressBar = document.querySelector("#progress-bar");
-// document.addEventListener("scroll", () => {
-//   maxScrollPos = document.body.clientHeight - window.innerHeight;
-//   scrollPos = window.scrollY;
-//   percentage = (scrollPos / maxScrollPos) * 100;
-//   progressBar.style.width = `${percentage}%`;
-// });
-
-
+// intersection observer for the nav
 
 const options = {
   root: null,
@@ -90,6 +81,7 @@ const showNav = (entries) => {
 const heroObserver = new IntersectionObserver(showNav, options)
 
 heroObserver.observe(hero)
+
 
 
 

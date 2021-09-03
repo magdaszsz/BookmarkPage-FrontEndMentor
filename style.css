@@ -515,7 +515,7 @@ nav.active .nav-list {
 .tabs-container {
   padding: 2rem 0 0 0;
   position: relative;
-  height: 27rem;
+  //height: 27rem;
   width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,12 +526,13 @@ nav.active .nav-list {
 }
 
 .tab {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   display: none;
-  margin-top: 2rem;
+  margin-top: 2rem; */
+  display: none;
 }
 
 
@@ -645,8 +646,6 @@ nav.active .nav-list {
  height: 12rem;
 }
 
-
-
 .tab-image img {
   margin: auto;
 }
@@ -666,9 +665,7 @@ nav.active .nav-list {
   text-align: left;
   font-size: 1rem;
 }
-
- }
-
+}
 
 @media (min-width: 1000px) {
     .tab-body {
@@ -677,7 +674,7 @@ nav.active .nav-list {
    } 
 
    .tabs-container {
-     height: 23rem;
+     padding: 3rem 0;
    }
 
   .tabs-list {
@@ -762,8 +759,6 @@ nav.active .nav-list {
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
-
-
 
 .card-btn {
   margin-top: 1rem;
